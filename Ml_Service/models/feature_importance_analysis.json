@@ -1,0 +1,377 @@
+{
+    "native_top_xgb": [
+        {
+            "feature": "smoker_No",
+            "importance": 0.6776400804519653
+        },
+        {
+            "feature": "chronic_diseases",
+            "importance": 0.08958474546670914
+        },
+        {
+            "feature": "insurance_plan",
+            "importance": 0.07035743445158005
+        },
+        {
+            "feature": "hospitalizations_last_year",
+            "importance": 0.055555131286382675
+        },
+        {
+            "feature": "exercise_level",
+            "importance": 0.0231795497238636
+        },
+        {
+            "feature": "age",
+            "importance": 0.010480489581823349
+        },
+        {
+            "feature": "children",
+            "importance": 0.007740195840597153
+        },
+        {
+            "feature": "cholesterol",
+            "importance": 0.006483729463070631
+        },
+        {
+            "feature": "systolic_bp",
+            "importance": 0.006060686893761158
+        },
+        {
+            "feature": "doctor_visits_per_year",
+            "importance": 0.004958167672157288
+        },
+        {
+            "feature": "stress_level",
+            "importance": 0.004505288787186146
+        },
+        {
+            "feature": "bmi",
+            "importance": 0.0026348421815782785
+        },
+        {
+            "feature": "alcohol_consumption_per_week",
+            "importance": 0.0022202646359801292
+        },
+        {
+            "feature": "annual_income_usd",
+            "importance": 0.002190391533076763
+        },
+        {
+            "feature": "region_Central",
+            "importance": 0.0020932701881974936
+        },
+        {
+            "feature": "marital_status_Single",
+            "importance": 0.0019758089911192656
+        },
+        {
+            "feature": "marital_status_Divorced",
+            "importance": 0.0018729126313701272
+        },
+        {
+            "feature": "diastolic_bp",
+            "importance": 0.0018696774495765567
+        },
+        {
+            "feature": "occupation_Retail Worker",
+            "importance": 0.0017959329998120666
+        },
+        {
+            "feature": "marital_status_Married",
+            "importance": 0.0017491055186837912
+        },
+        {
+            "feature": "occupation_Lawyer",
+            "importance": 0.0016511175781488419
+        },
+        {
+            "feature": "occupation_Nurse",
+            "importance": 0.0016324172029271722
+        },
+        {
+            "feature": "region_Northeast",
+            "importance": 0.0016280565178021789
+        },
+        {
+            "feature": "occupation_Doctor",
+            "importance": 0.001586515223607421
+        },
+        {
+            "feature": "occupation_Engineer",
+            "importance": 0.0015859920531511307
+        },
+        {
+            "feature": "gender_Female",
+            "importance": 0.0015578869497403502
+        },
+        {
+            "feature": "region_Northwest",
+            "importance": 0.0015437098918482661
+        },
+        {
+            "feature": "region_Southeast",
+            "importance": 0.0015221635112538934
+        },
+        {
+            "feature": "sleep_hours",
+            "importance": 0.0015044065658003092
+        },
+        {
+            "feature": "occupation_Office Worker",
+            "importance": 0.0015018248232081532
+        },
+        {
+            "feature": "diabetes_No",
+            "importance": 0.001397261512465775
+        },
+        {
+            "feature": "occupation_Technician",
+            "importance": 0.0013586771674454212
+        },
+        {
+            "feature": "occupation_Manager",
+            "importance": 0.001306110993027687
+        },
+        {
+            "feature": "occupation_Teacher",
+            "importance": 0.001223943429067731
+        },
+        {
+            "feature": "region_Southwest",
+            "importance": 0.0011801847722381353
+        },
+        {
+            "feature": "marital_status_Widowed",
+            "importance": 0.0011775001185014844
+        },
+        {
+            "feature": "occupation_Driver",
+            "importance": 0.000926688255276531
+        },
+        {
+            "feature": "occupation_Construction Worker",
+            "importance": 0.0007677801186218858
+        },
+        {
+            "feature": "gender_Male",
+            "importance": 0.0
+        },
+        {
+            "feature": "smoker_Yes",
+            "importance": 0.0
+        },
+        {
+            "feature": "diabetes_Yes",
+            "importance": 0.0
+        }
+    ],
+    "perm_top_xgb": [
+        {
+            "feature": "smoker",
+            "importance_mean": 5539.075602051836,
+            "importance_std": 63.26866497407841
+        },
+        {
+            "feature": "insurance_plan",
+            "importance_mean": 1655.740958893554,
+            "importance_std": 32.8516758501925
+        },
+        {
+            "feature": "chronic_diseases",
+            "importance_mean": 1463.534240665195,
+            "importance_std": 51.013007244663044
+        },
+        {
+            "feature": "hospitalizations_last_year",
+            "importance_mean": 934.8219244919568,
+            "importance_std": 29.436733953159564
+        },
+        {
+            "feature": "exercise_level",
+            "importance_mean": 416.07311656506573,
+            "importance_std": 14.334019798553445
+        },
+        {
+            "feature": "age",
+            "importance_mean": 340.8762902570892,
+            "importance_std": 27.967275621678027
+        },
+        {
+            "feature": "children",
+            "importance_mean": 101.25433547235016,
+            "importance_std": 15.878041706418827
+        },
+        {
+            "feature": "bmi",
+            "importance_mean": 64.89908092023875,
+            "importance_std": 16.87666002708749
+        },
+        {
+            "feature": "doctor_visits_per_year",
+            "importance_mean": 36.79002390086562,
+            "importance_std": 7.076503009415503
+        },
+        {
+            "feature": "alcohol_consumption_per_week",
+            "importance_mean": 22.00887451644594,
+            "importance_std": 6.196649262235667
+        },
+        {
+            "feature": "annual_income_usd",
+            "importance_mean": 20.8781658321167,
+            "importance_std": 4.35822633651105
+        },
+        {
+            "feature": "cholesterol",
+            "importance_mean": 16.43485791102298,
+            "importance_std": 6.194762809907981
+        },
+        {
+            "feature": "blood_pressure",
+            "importance_mean": 15.770858819322848,
+            "importance_std": 4.638814999764479
+        },
+        {
+            "feature": "stress_level",
+            "importance_mean": 9.10701648401132,
+            "importance_std": 5.4295390992664885
+        },
+        {
+            "feature": "marital_status",
+            "importance_mean": 3.0160393262723573,
+            "importance_std": 1.0381902173568436
+        },
+        {
+            "feature": "diabetes",
+            "importance_mean": 2.9807018939754015,
+            "importance_std": 0.9405119791663433
+        },
+        {
+            "feature": "sleep_hours",
+            "importance_mean": 0.3169246992214994,
+            "importance_std": 5.467083249202686
+        },
+        {
+            "feature": "occupation",
+            "importance_mean": -0.10532194309002989,
+            "importance_std": 2.894108531862875
+        },
+        {
+            "feature": "gender",
+            "importance_mean": -0.5859031959665117,
+            "importance_std": 0.3778559582946593
+        },
+        {
+            "feature": "region",
+            "importance_mean": -2.1418506008173153,
+            "importance_std": 4.115082393104754
+        }
+    ],
+    "grouped_top_xgb": [
+        {
+            "parent_feature": "smoker",
+            "importance": 0.6776400804519653,
+            "importance_pct": 67.7640151977539
+        },
+        {
+            "parent_feature": "chronic_diseases",
+            "importance": 0.08958474546670914,
+            "importance_pct": 8.958475112915039
+        },
+        {
+            "parent_feature": "insurance_plan",
+            "importance": 0.07035743445158005,
+            "importance_pct": 7.0357441902160645
+        },
+        {
+            "parent_feature": "hospitalizations_last_year",
+            "importance": 0.055555131286382675,
+            "importance_pct": 5.555513381958008
+        },
+        {
+            "parent_feature": "exercise_level",
+            "importance": 0.0231795497238636,
+            "importance_pct": 2.317955255508423
+        },
+        {
+            "parent_feature": "occupation",
+            "importance": 0.015336999669671059,
+            "importance_pct": 1.5337001085281372
+        },
+        {
+            "parent_feature": "age",
+            "importance": 0.010480489581823349,
+            "importance_pct": 1.0480490922927856
+        },
+        {
+            "parent_feature": "region",
+            "importance": 0.007967384532094002,
+            "importance_pct": 0.7967385649681091
+        },
+        {
+            "parent_feature": "children",
+            "importance": 0.007740195840597153,
+            "importance_pct": 0.7740196585655212
+        },
+        {
+            "parent_feature": "marital_status",
+            "importance": 0.006775327026844025,
+            "importance_pct": 0.6775327324867249
+        },
+        {
+            "parent_feature": "cholesterol",
+            "importance": 0.006483729463070631,
+            "importance_pct": 0.648373007774353
+        },
+        {
+            "parent_feature": "systolic_bp",
+            "importance": 0.006060686893761158,
+            "importance_pct": 0.6060687303543091
+        },
+        {
+            "parent_feature": "doctor_visits_per_year",
+            "importance": 0.004958167672157288,
+            "importance_pct": 0.49581682682037354
+        },
+        {
+            "parent_feature": "stress_level",
+            "importance": 0.004505288787186146,
+            "importance_pct": 0.45052891969680786
+        },
+        {
+            "parent_feature": "bmi",
+            "importance": 0.0026348421815782785,
+            "importance_pct": 0.26348423957824707
+        },
+        {
+            "parent_feature": "alcohol_consumption_per_week",
+            "importance": 0.0022202646359801292,
+            "importance_pct": 0.22202648222446442
+        },
+        {
+            "parent_feature": "annual_income_usd",
+            "importance": 0.002190391533076763,
+            "importance_pct": 0.2190391719341278
+        },
+        {
+            "parent_feature": "diastolic_bp",
+            "importance": 0.0018696774495765567,
+            "importance_pct": 0.18696776032447815
+        },
+        {
+            "parent_feature": "gender",
+            "importance": 0.0015578869497403502,
+            "importance_pct": 0.15578870475292206
+        },
+        {
+            "parent_feature": "sleep_hours",
+            "importance": 0.0015044065658003092,
+            "importance_pct": 0.15044066309928894
+        },
+        {
+            "parent_feature": "diabetes",
+            "importance": 0.001397261512465775,
+            "importance_pct": 0.1397261619567871
+        }
+    ]
+}

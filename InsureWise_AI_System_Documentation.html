@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InsureWise AI — System Architecture & Technical Documentation</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 15mm 15mm 15mm;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      line-height: 1.6;
+      margin: 0;
+      padding: 24px;
+      background-color: #ffffff;
+    }
+    .header-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 28px;
+      border-radius: 10px;
+      margin-bottom: 28px;
+    }
+    .header-banner h1 {
+      margin: 0 0 6px 0;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .header-banner p {
+      margin: 0;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #334155;
+      font-size: 11px;
+    }
+    .meta-grid div {
+      color: #cbd5e1;
+    }
+    .meta-grid strong {
+      color: #ffffff;
+      display: block;
+      font-size: 12px;
+    }
+    h2 {
+      color: #0f172a;
+      font-size: 18px;
+      font-weight: 700;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 6px;
+      margin-top: 28px;
+      margin-bottom: 14px;
+    }
+    h3 {
+      color: #1e293b;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 12.5px;
+      color: #334155;
+    }
+    ul, ol {
+      margin-top: 6px;
+      margin-bottom: 12px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 18px;
+      font-size: 11.5px;
+    }
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      text-align: left;
+      padding: 8px 12px;
+      font-weight: 700;
+      border-bottom: 2px solid #cbd5e1;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+    .tech-tag {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #0f172a;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      font-family: monospace;
+      font-weight: 600;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    .badge-green {
+      background: #dcfce7;
+      color: #15803d;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .badge-blue {
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .print-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      background: #0f172a;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 9999;
+    }
+    @media print {
+      .print-btn { display: none; }
+      body { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">📥 Download / Save as PDF</button>
+
+  <div class="header-banner">
+    <h1>InsureWise AI — System Architecture & Technical Documentation</h1>
+    <p>Explainable Machine Learning REST API & Full-Stack Platform for Medical Insurance Premium Prediction</p>
+    <div class="meta-grid">
+      <div>Version<strong>v1.0.0 Production</strong></div>
+      <div>Architecture<strong>3-Tier Microservices</strong></div>
+      <div>ML Model<strong>XGBoost Regressor</strong></div>
+      <div>Explainability<strong>SHAP TreeExplainer</strong></div>
+    </div>
+  </div>
+
+  <!-- 1. Executive Summary & Problem Statement -->
+  <h2>1. Executive Summary & Problem Statement</h2>
+  
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">⚠️ Existing Industry Problems</div>
+      <ul>
+        <li><strong>Black-Box Actuarial Quotes:</strong> Traditional health insurance quotes provide customers with a single cost figure without explaining why high premiums are charged.</li>
+        <li><strong>Opaque Risk Factors:</strong> Customers cannot see how specific vitals (BMI, blood pressure, smoking) mathematically impact their annual quote.</li>
+        <li><strong>Free-Tier Hosting Sleep (Render 502 Errors):</strong> Cloud services like Render Free enter sleep mode after inactivity. Initial API calls fail with 502/503 errors if cold starts are unhandled.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">💡 Existing Market Solutions vs. Our Innovation</div>
+      <ul>
+        <li><strong>Static Actuarial Lookup Tables:</strong> Hardcoded linear rules that fail to capture non-linear feature interactions (e.g. combined risk of high BMI + smoking).</li>
+        <li><strong>Manual Render URL Pings:</strong> Users previously had to manually visit backend URLs to wake up sleeping services.</li>
+        <li><strong>Our Solution (InsureWise AI):</strong> Automated, robust cold-start retry architecture paired with explainable XGBoost ML and real-time SHAP cost attributions.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 2. What We Are Solving -->
+  <h2>2. What We Are Solving</h2>
+  <ol>
+    <li><strong>Transparent & Explainable AI Pricing:</strong> Decomposes annual premium quotes into exact dollar attributions ($+/$-) for 20 demographic and medical features using game-theoretic SHAP values.</li>
+    <li><strong>Zero-Cost Free-Tier Cold-Start Handling:</strong> Implements an automated, bounded 15-attempt retry loop on the Node.js backend to seamlessly wake up sleeping Render ML services without user intervention.</li>
+    <li><strong>Enterprise PDF Quote Export:</strong> Enables users to instantly export full actuarial audit reports as clean PDF documents.</li>
+  </ol>
+
+  <!-- 3. System Architecture & Project Workflow -->
+  <h2>3. System Architecture & Project Workflow</h2>
+  
+  <p>The application strictly adheres to a decoupled 3-tier microservice architecture:</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Layer</th>
+        <th>Technology</th>
+        <th>Hosting Target</th>
+        <th>Responsibilities</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Frontend</strong></td>
+        <td>React 19 + Vite + TailwindCSS</td>
+        <td><span class="badge-blue">Vercel</span></td>
+        <td>Single-Page Application (SPA), quote calculator form, interactive SHAP visualizer, PDF report generator.</td>
+      </tr>
+      <tr>
+        <td><strong>API Gateway / Backend</strong></td>
+        <td>Node.js + Express</td>
+        <td><span class="badge-green">Render</span></td>
+        <td>JWT Authentication, rate limiting, MongoDB persistence, ML service proxy with cold-start retry engine.</td>
+      </tr>
+      <tr>
+        <td><strong>ML Microservice</strong></td>
+        <td>Python + FastAPI + Uvicorn</td>
+        <td><span class="badge-green">Render</span></td>
+        <td>High-performance inference engine running XGBoost Regressor and SHAP TreeExplainer.</td>
+      </tr>
+      <tr>
+        <td><strong>Database</strong></td>
+        <td>MongoDB Atlas</td>
+        <td>Cloud MongoDB</td>
+        <td>Persists user accounts, hashed passwords, and historical prediction records.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>End-to-End Prediction Workflow</h3>
+  <ol>
+    <li><strong>User Input:</strong> User inputs 20 health and demographic metrics on the React frontend.</li>
+    <li><strong>API Request:</strong> React sends an authenticated POST request to Express backend (`/api/predictions`).</li>
+    <li><strong>Cold-Start Detection & Retry:</strong> If FastAPI ML Service is sleeping, Express automatically pings and retries up to 15 times (every 3 seconds) while frontend shows smooth stage messages (*"Preparing AI prediction...", "AI service is starting..."*).</li>
+    <li><strong>ML Inference:</strong> FastAPI processes feature transformations, executes XGBoost prediction, and computes SHAP feature attributions.</li>
+    <li><strong>Persistence & Audit:</strong> Express saves the result to MongoDB Atlas and returns the quote + SHAP breakdown to React.</li>
+    <li><strong>Render & Export:</strong> React displays interactive risk cards, waterfall plots, and enables one-click PDF report exports.</li>
+  </ol>
+
+  <!-- 4. Machine Learning Models & Components -->
+  <h2>4. Machine Learning Models & What Each Component Does</h2>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">🤖 Model 1: Tuned XGBoost Regressor (Primary Inference Model)</div>
+    <p><strong>Role:</strong> Predicts the exact annual medical insurance premium in USD ($).</p>
+    <ul>
+      <li><strong>Algorithm:</strong> eXtreme Gradient Boosting (XGBoost) Decision Trees.</li>
+      <li><strong>Cross-Validation Accuracy (R²):</strong> <span class="badge-green">87.99% (0.8799)</span></li>
+      <li><strong>Mean Absolute Error (MAE):</strong> ~$2,064.14 USD.</li>
+      <li><strong>Artifact File:</strong> <code>insurewise_model.joblib</code> (Loaded once on FastAPI startup).</li>
+    </ul>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">🔍 Model 2: SHAP TreeExplainer (Explainability Engine)</div>
+    <p><strong>Role:</strong> Calculates game-theoretic Shapley values to assign exact dollar cost contributions to each input feature.</p>
+    <ul>
+      <li><strong>Algorithm:</strong> SHAP (SHapley Additive exPlanations) TreeExplainer optimized for tree-based models.</li>
+      <li><strong>Output:</strong> Map of feature attributions showing positive shifts (+ Quote) in green and negative shifts (- Quote) in red.</li>
+      <li><strong>Primary Actuarial Drivers:</strong> Smoker status, Age, BMI, and Chronic Diseases account for >85% of total quote variance.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">⚙️ Custom Transformer: BloodPressureExtractor</div>
+    <p><strong>Role:</strong> Custom Scikit-Learn transformer registered during model training.</p>
+    <ul>
+      <li><strong>Function:</strong> Parses string blood pressure values (e.g. <code>"120/80"</code>) into numeric <code>systolic_bp</code> and <code>diastolic_bp</code> float columns during pipeline execution.</li>
+    </ul>
+  </div>
+
+  <!-- 5. Technologies & Libraries Used -->
+  <h2>5. Technologies & Libraries Used</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Technology / Library</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Frontend Core</strong></td>
+        <td><span class="tech-tag">React 19</span> <span class="tech-tag">Vite</span> <span class="tech-tag">React Router 7</span></td>
+        <td>Fast SPA UI rendering, component routing, and state management.</td>
+      </tr>
+      <tr>
+        <td><strong>UI Styling</strong></td>
+        <td><span class="tech-tag">TailwindCSS 4</span> <span class="tech-tag">Lucide Icons</span> <span class="tech-tag">Framer Motion</span></td>
+        <td>Responsive enterprise design system, icons, and micro-animations.</td>
+      </tr>
+      <tr>
+        <td><strong>Backend API</strong></td>
+        <td><span class="tech-tag">Node.js</span> <span class="tech-tag">Express</span> <span class="tech-tag">Axios</span></td>
+        <td>REST API gateway, ML proxy, rate limiting, and HTTP client.</td>
+      </tr>
+      <tr>
+        <td><strong>Database & Security</strong></td>
+        <td><span class="tech-tag">MongoDB Atlas</span> <span class="tech-tag">Mongoose</span> <span class="tech-tag">JWT</span> <span class="tech-tag">BcryptJS</span></td>
+        <td>Database storage, document modeling, token auth, and password hashing.</td>
+      </tr>
+      <tr>
+        <td><strong>ML Microservice</strong></td>
+        <td><span class="tech-tag">Python 3.11</span> <span class="tech-tag">FastAPI</span> <span class="tech-tag">Uvicorn</span> <span class="tech-tag">Pydantic</span></td>
+        <td>Async REST endpoints, request validation, and model serving.</td>
+      </tr>
+      <tr>
+        <td><strong>ML & Data Science</strong></td>
+        <td><span class="tech-tag">XGBoost</span> <span class="tech-tag">SHAP</span> <span class="tech-tag">Scikit-Learn</span> <span class="tech-tag">Pandas</span> <span class="tech-tag">Joblib</span></td>
+        <td>Model training, pipeline serialization, data processing, and SHAP attributions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 6. Summary -->
+  <h2>6. Summary & Deployment URLs</h2>
+  <ul>
+    <li><strong>Frontend (Vercel):</strong> Deployed SPA client.</li>
+    <li><strong>Node.js Backend (Render):</strong> <code>https://insurewise-api.onrender.com</code></li>
+    <li><strong>FastAPI ML Service (Render):</strong> <code>https://insurewise-ml.onrender.com</code></li>
+  </ul>
+
+</body>
+</html>

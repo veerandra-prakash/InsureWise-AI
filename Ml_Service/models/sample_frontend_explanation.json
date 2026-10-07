@@ -1,0 +1,93 @@
+{
+    "customer_id": "CUST-0001",
+    "input_features": {
+        "age": 23,
+        "gender": "Male",
+        "bmi": 25.0,
+        "children": 1,
+        "smoker": "No",
+        "region": "Southwest",
+        "occupation": "Teacher",
+        "annual_income_usd": 46863,
+        "exercise_level": "High",
+        "chronic_diseases": 2,
+        "doctor_visits_per_year": 11,
+        "hospitalizations_last_year": 1,
+        "alcohol_consumption_per_week": 13,
+        "insurance_plan": "Basic",
+        "blood_pressure": "120/71",
+        "diabetes": "No",
+        "cholesterol": 202,
+        "sleep_hours": 7.8,
+        "stress_level": 6.9,
+        "marital_status": "Married"
+    },
+    "base_population_premium_usd": 17957.4,
+    "predicted_premium_usd": 17959.45,
+    "net_shap_adjustment_usd": 2.05,
+    "positive_feature_contributions": [
+        {
+            "feature": "chronic_diseases",
+            "transformed_value": 1.51,
+            "shap_contribution_usd": 3597.83,
+            "impact_type": "Positive"
+        },
+        {
+            "feature": "hospitalizations_last_year",
+            "transformed_value": 1.16,
+            "shap_contribution_usd": 2013.08,
+            "impact_type": "Positive"
+        },
+        {
+            "feature": "doctor_visits_per_year",
+            "transformed_value": 2.7,
+            "shap_contribution_usd": 1619.93,
+            "impact_type": "Positive"
+        },
+        {
+            "feature": "alcohol_consumption_per_week",
+            "transformed_value": 1.4,
+            "shap_contribution_usd": 520.04,
+            "impact_type": "Positive"
+        },
+        {
+            "feature": "occupation_Teacher",
+            "transformed_value": 1.0,
+            "shap_contribution_usd": 115.54,
+            "impact_type": "Positive"
+        }
+    ],
+    "negative_feature_contributions": [
+        {
+            "feature": "smoker_No",
+            "transformed_value": 1.0,
+            "shap_contribution_usd": -2655.0,
+            "impact_type": "Negative"
+        },
+        {
+            "feature": "exercise_level",
+            "transformed_value": 2.0,
+            "shap_contribution_usd": -1444.81,
+            "impact_type": "Negative"
+        },
+        {
+            "feature": "insurance_plan",
+            "transformed_value": 0.0,
+            "shap_contribution_usd": -1361.4,
+            "impact_type": "Negative"
+        },
+        {
+            "feature": "age",
+            "transformed_value": -1.32,
+            "shap_contribution_usd": -1126.35,
+            "impact_type": "Negative"
+        },
+        {
+            "feature": "children",
+            "transformed_value": -0.42,
+            "shap_contribution_usd": -402.79,
+            "impact_type": "Negative"
+        }
+    ],
+    "analytical_disclaimer": "SHAP values represent statistical feature attributions calculated by the model to explain how individual patient inputs shift the predicted premium from the population baseline premium. SHAP values describe internal model decision logic and do not represent real-world physical or economic causality."
+}

@@ -1,0 +1,207 @@
+[
+    {
+        "Feature": "smoker_No",
+        "Mean_Abs_SHAP ($)": 4297.47998046875,
+        "Relative_Importance (%)": 31.817657470703125
+    },
+    {
+        "Feature": "insurance_plan",
+        "Mean_Abs_SHAP ($)": 1887.9398193359375,
+        "Relative_Importance (%)": 13.977916717529297
+    },
+    {
+        "Feature": "chronic_diseases",
+        "Mean_Abs_SHAP ($)": 1870.818359375,
+        "Relative_Importance (%)": 13.851154327392578
+    },
+    {
+        "Feature": "hospitalizations_last_year",
+        "Mean_Abs_SHAP ($)": 1455.5174560546875,
+        "Relative_Importance (%)": 10.776350975036621
+    },
+    {
+        "Feature": "exercise_level",
+        "Mean_Abs_SHAP ($)": 899.2926025390625,
+        "Relative_Importance (%)": 6.658176898956299
+    },
+    {
+        "Feature": "age",
+        "Mean_Abs_SHAP ($)": 822.4511108398438,
+        "Relative_Importance (%)": 6.089258670806885
+    },
+    {
+        "Feature": "children",
+        "Mean_Abs_SHAP ($)": 470.132080078125,
+        "Relative_Importance (%)": 3.4807610511779785
+    },
+    {
+        "Feature": "bmi",
+        "Mean_Abs_SHAP ($)": 357.9342956542969,
+        "Relative_Importance (%)": 2.650071620941162
+    },
+    {
+        "Feature": "doctor_visits_per_year",
+        "Mean_Abs_SHAP ($)": 240.4150848388672,
+        "Relative_Importance (%)": 1.7799837589263916
+    },
+    {
+        "Feature": "alcohol_consumption_per_week",
+        "Mean_Abs_SHAP ($)": 205.61007690429688,
+        "Relative_Importance (%)": 1.5222946405410767
+    },
+    {
+        "Feature": "systolic_bp",
+        "Mean_Abs_SHAP ($)": 168.91726684570312,
+        "Relative_Importance (%)": 1.2506287097930908
+    },
+    {
+        "Feature": "cholesterol",
+        "Mean_Abs_SHAP ($)": 161.18019104003906,
+        "Relative_Importance (%)": 1.1933448314666748
+    },
+    {
+        "Feature": "sleep_hours",
+        "Mean_Abs_SHAP ($)": 100.87824249267578,
+        "Relative_Importance (%)": 0.7468817234039307
+    },
+    {
+        "Feature": "annual_income_usd",
+        "Mean_Abs_SHAP ($)": 100.31340789794922,
+        "Relative_Importance (%)": 0.7426998019218445
+    },
+    {
+        "Feature": "stress_level",
+        "Mean_Abs_SHAP ($)": 99.1661148071289,
+        "Relative_Importance (%)": 0.734205424785614
+    },
+    {
+        "Feature": "diastolic_bp",
+        "Mean_Abs_SHAP ($)": 81.62061309814453,
+        "Relative_Importance (%)": 0.6043022274971008
+    },
+    {
+        "Feature": "region_Central",
+        "Mean_Abs_SHAP ($)": 37.5047607421875,
+        "Relative_Importance (%)": 0.2776775360107422
+    },
+    {
+        "Feature": "occupation_Engineer",
+        "Mean_Abs_SHAP ($)": 31.883729934692383,
+        "Relative_Importance (%)": 0.23606055974960327
+    },
+    {
+        "Feature": "region_Southeast",
+        "Mean_Abs_SHAP ($)": 22.858407974243164,
+        "Relative_Importance (%)": 0.16923893988132477
+    },
+    {
+        "Feature": "diabetes_No",
+        "Mean_Abs_SHAP ($)": 21.091445922851562,
+        "Relative_Importance (%)": 0.1561567187309265
+    },
+    {
+        "Feature": "region_Northwest",
+        "Mean_Abs_SHAP ($)": 17.7376766204834,
+        "Relative_Importance (%)": 0.1313260942697525
+    },
+    {
+        "Feature": "occupation_Office Worker",
+        "Mean_Abs_SHAP ($)": 16.864749908447266,
+        "Relative_Importance (%)": 0.12486312538385391
+    },
+    {
+        "Feature": "occupation_Teacher",
+        "Mean_Abs_SHAP ($)": 15.312769889831543,
+        "Relative_Importance (%)": 0.11337258666753769
+    },
+    {
+        "Feature": "region_Southwest",
+        "Mean_Abs_SHAP ($)": 15.284048080444336,
+        "Relative_Importance (%)": 0.11315993964672089
+    },
+    {
+        "Feature": "occupation_Retail Worker",
+        "Mean_Abs_SHAP ($)": 13.384747505187988,
+        "Relative_Importance (%)": 0.09909791499376297
+    },
+    {
+        "Feature": "occupation_Lawyer",
+        "Mean_Abs_SHAP ($)": 13.113263130187988,
+        "Relative_Importance (%)": 0.09708789736032486
+    },
+    {
+        "Feature": "region_Northeast",
+        "Mean_Abs_SHAP ($)": 12.152255058288574,
+        "Relative_Importance (%)": 0.08997279405593872
+    },
+    {
+        "Feature": "marital_status_Married",
+        "Mean_Abs_SHAP ($)": 11.178668975830078,
+        "Relative_Importance (%)": 0.08276455849409103
+    },
+    {
+        "Feature": "occupation_Manager",
+        "Mean_Abs_SHAP ($)": 10.598725318908691,
+        "Relative_Importance (%)": 0.07847078144550323
+    },
+    {
+        "Feature": "occupation_Doctor",
+        "Mean_Abs_SHAP ($)": 10.181825637817383,
+        "Relative_Importance (%)": 0.07538414001464844
+    },
+    {
+        "Feature": "marital_status_Divorced",
+        "Mean_Abs_SHAP ($)": 7.499207496643066,
+        "Relative_Importance (%)": 0.05552258715033531
+    },
+    {
+        "Feature": "occupation_Nurse",
+        "Mean_Abs_SHAP ($)": 7.457821846008301,
+        "Relative_Importance (%)": 0.05521617829799652
+    },
+    {
+        "Feature": "occupation_Driver",
+        "Mean_Abs_SHAP ($)": 7.054803848266602,
+        "Relative_Importance (%)": 0.05223231390118599
+    },
+    {
+        "Feature": "marital_status_Single",
+        "Mean_Abs_SHAP ($)": 6.965766429901123,
+        "Relative_Importance (%)": 0.051573097705841064
+    },
+    {
+        "Feature": "gender_Female",
+        "Mean_Abs_SHAP ($)": 5.593942642211914,
+        "Relative_Importance (%)": 0.04141639918088913
+    },
+    {
+        "Feature": "occupation_Construction Worker",
+        "Mean_Abs_SHAP ($)": 1.6214513778686523,
+        "Relative_Importance (%)": 0.012004892341792583
+    },
+    {
+        "Feature": "occupation_Technician",
+        "Mean_Abs_SHAP ($)": 0.8114584684371948,
+        "Relative_Importance (%)": 0.006007871124893427
+    },
+    {
+        "Feature": "marital_status_Widowed",
+        "Mean_Abs_SHAP ($)": 0.7706757187843323,
+        "Relative_Importance (%)": 0.005705924239009619
+    },
+    {
+        "Feature": "gender_Male",
+        "Mean_Abs_SHAP ($)": 0.0,
+        "Relative_Importance (%)": 0.0
+    },
+    {
+        "Feature": "smoker_Yes",
+        "Mean_Abs_SHAP ($)": 0.0,
+        "Relative_Importance (%)": 0.0
+    },
+    {
+        "Feature": "diabetes_Yes",
+        "Mean_Abs_SHAP ($)": 0.0,
+        "Relative_Importance (%)": 0.0
+    }
+]

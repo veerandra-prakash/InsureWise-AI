@@ -1,7 +1,54 @@
 # ==========================================
+# InsureWise AI System - Global GitIgnore
+# ==========================================
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.pfx
+*.crt
+*.p12
+secrets.json
+credentials.json
+
+# ==========================================
+# Node.js & Frontend Build Artifacts
+# ==========================================
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+build/
+**/build/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.out/
+.oxlintrc.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
 # Python & Bytecode Caches
 # ==========================================
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 *.so
@@ -26,8 +73,11 @@ wheels/
 # Virtual Environments
 # ==========================================
 venv/
+**/venv/
 .venv/
+**/.venv/
 env/
+**/env/
 ENV/
 env.bak/
 venv.bak/
@@ -36,16 +86,19 @@ venv.bak/
 # Jupyter Notebooks
 # ==========================================
 .ipynb_checkpoints
+**/.ipynb_checkpoints
 *-checkpoint.ipynb
 
 # ==========================================
 # Testing & Code Quality
 # ==========================================
 .pytest_cache/
+**/.pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 .coverage.*
+coverage/
 htmlcov/
 nosetests.xml
 coverage.xml
@@ -53,19 +106,9 @@ coverage.xml
 *.py,cover
 
 # ==========================================
-# Environment Variables & Secrets
-# ==========================================
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-secrets.json
-
-# ==========================================
 # ML Model Artifacts & Heavy Weights
 # ==========================================
-# Ignore trained model binaries & weights
+# Ignore raw/intermediate model binaries & weights
 *.joblib
 *.pkl
 *.pickle
@@ -81,32 +124,43 @@ secrets.json
 *.model
 *.safetensors
 
-# ==========================================
-# ML Datasets & Large Data Files
-# ==========================================
-# Uncomment or adjust to ignore large data files if managed via DVC / S3
-# *.csv
-# *.parquet
-# *.feather
-# *.npy
-# *.npz
-# *.sqlite
-# *.db
+# Preserve production model pipeline weight
+!Ml_Service/models/production/insurewise_model.joblib
+!models/production/insurewise_model.joblib
 
+# ==========================================
 # ML Experiment Tracking & Logs
+# ==========================================
 wandb/
 mlruns/
 tensorboard/
 logs/
+**/logs/
 *.log
 
 # ==========================================
 # IDE & System Files
 # ==========================================
 .vscode/
+**/.vscode/
 .idea/
+**/.idea/
 .gemini/
+**/.gemini/
 .DS_Store
+**/.DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 *.swp
 *.swo
+*~
+.antigravity/
+
+# ==========================================
+# Temporary & Scratch Files
+# ==========================================
+scratch/
+**/scratch/
+tmp/
+temp/

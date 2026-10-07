@@ -1,0 +1,42 @@
+Feature,Mean_Abs_SHAP ($),Relative_Importance (%)
+smoker_No,4297.48,31.817657
+insurance_plan,1887.9398,13.977917
+chronic_diseases,1870.8184,13.851154
+hospitalizations_last_year,1455.5175,10.776351
+exercise_level,899.2926,6.658177
+age,822.4511,6.0892587
+children,470.13208,3.480761
+bmi,357.9343,2.6500716
+doctor_visits_per_year,240.41508,1.7799838
+alcohol_consumption_per_week,205.61008,1.5222946
+systolic_bp,168.91727,1.2506287
+cholesterol,161.18019,1.1933448
+sleep_hours,100.87824,0.7468817
+annual_income_usd,100.31341,0.7426998
+stress_level,99.166115,0.7342054
+diastolic_bp,81.62061,0.6043022
+region_Central,37.50476,0.27767754
+occupation_Engineer,31.88373,0.23606056
+region_Southeast,22.858408,0.16923894
+diabetes_No,21.091446,0.15615672
+region_Northwest,17.737677,0.1313261
+occupation_Office Worker,16.86475,0.124863125
+occupation_Teacher,15.31277,0.11337259
+region_Southwest,15.284048,0.11315994
+occupation_Retail Worker,13.3847475,0.099097915
+occupation_Lawyer,13.113263,0.0970879
+region_Northeast,12.152255,0.089972794
+marital_status_Married,11.178669,0.08276456
+occupation_Manager,10.598725,0.07847078
+occupation_Doctor,10.181826,0.07538414
+marital_status_Divorced,7.4992075,0.055522587
+occupation_Nurse,7.457822,0.05521618
+occupation_Driver,7.054804,0.052232314
+marital_status_Single,6.9657664,0.051573098
+gender_Female,5.5939426,0.0414164
+occupation_Construction Worker,1.6214514,0.012004892
+occupation_Technician,0.81145847,0.006007871
+marital_status_Widowed,0.7706757,0.0057059242
+gender_Male,0.0,0.0
+smoker_Yes,0.0,0.0
+diabetes_Yes,0.0,0.0
