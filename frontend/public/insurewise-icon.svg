@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded frame -->
+  <rect width="32" height="32" rx="7" fill="url(#bgGrad)"/>
+
+  <!-- Outer Shield contour -->
+  <path d="M16 4.5 L24.5 8 C24.5 16.5 20.5 23.5 16 26.5 C11.5 23.5 7.5 16.5 7.5 8 Z" 
+        fill="none" 
+        stroke="url(#accentGrad)" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- AI Four-point Spark in Shield Center -->
+  <path d="M16 9.5 L17.3 14.7 L22.5 16 L17.3 17.3 L16 22.5 L14.7 17.3 L9.5 16 L14.7 14.7 Z" 
+        fill="url(#accentGrad)"/>
+</svg>
